@@ -19,10 +19,8 @@ jobs:
     steps:
       - name: Hämta källkod
         uses: actions/checkout@v4
-      - name: Aktivera GitHub Pages
+      - name: Läs Pages-konfiguration
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Paketera webbplats
         uses: actions/upload-pages-artifact@v3
         with:
